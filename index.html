@@ -1,0 +1,309 @@
+XML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto World</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.hero {
+    height: 400px;
+    background: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px gray;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+<style>
+
+.hero-text{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#ffd700;
+}
+.hero-text h2{
+    font-size:30px;
+}
+
+.hero-text p{
+    font-size:22px;
+}
+
+.hero button{
+    padding:15px 30px;
+    margin:10px;
+    background:#ffd700;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Auto World</h1>
+<p>Лучшие автомобили мира</p>
+</header>
+
+
+<nav>
+<a href="#home">Главная</a>
+<a href="#cars">Авто</a>
+<a href="#contact">Контакты</a>
+</nav>
+
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Auto World 🚗</h1>
+
+<h2>Лучшие автомобили мира</h2>
+
+<p>Mercedes • BMW • Audi • Toyota</p>
+
+<button onclick="showCars()">
+Смотреть авто
+</button>
+
+<button onclick="contact()">
+Контакты
+</button>
+
+</div>
+
+</section>
+
+<section class="cars" id="cars">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8">
+<h2>Mercedes-Benz</h2>
+<p>Премиальный автомобиль с мощным двигателем и комфортом.</p>
+<button>Подробнее</button>
+</div>
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d">
+<h2>BMW</h2>
+<p>Спортивный дизайн и современные технологии.</p>
+<button>Подробнее</button>
+</div>
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542362567-b07e54358753">
+<h2>Audi</h2>
+<p>Немецкое качество и стиль.</p>
+<button>Подробнее</button>
+</div>
+
+</section>
+
+
+<footer>
+© 2026 Auto World | Все права защищены
+<section id="contact" style="
+background:#222;
+color:white;
+padding:40px;
+text-align:center;
+">
+
+<h2>Контакты</h2>
+
+<p>📞 Телефон: +992 501999160</p>
+
+<p>📧 Email: auto@gmail.com</p>
+
+<p>📍 Душанбе</p>
+
+</section>
+<script>
+
+function showCars(){
+
+document.getElementById("cars").scrollIntoView();
+
+}
+
+
+function contact(){
+
+document.getElementById("contact").scrollIntoView();
+
+}
+
+</script>
+
+<button onclick="showInfo('Mercedes-Benz')">Подробнее</button>
+<button onclick="showInfo('BMW')">Подробнее</button>
+<button onclick="showInfo('Audi')">Подробнее</button>
+<style>
+
+</style>
+<style>
+
+body {
+    background: rgb(230, 225, 225);
+    color: white;
+    font-family: Arial;
+}
+
+button {
+    background: gold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Auto World</title>
+
+<style>
+body {
+    background: #111;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Авто сайт</h1>
+
+</body>
+</html>
+<nav>
+<a href="#home">Главная</a>
+<a href="#cars">Авто</a>
+<a href="#contact">Контакты</a>
+</nav>
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Auto World 🚗</h1>
+
+<h2>Лучшие автомобили мира</h2>
+
+<p>Mercedes • BMW • Audi • Toyota</p>
+
+<button onclick="showCars()">
+Смотреть авто
+</button>
+
+<button onclick="contact()">
+Контакты
+</button>
+
+</div>
+
+</section>
+<section class="cars" id="cars"></section>
+<section id="contact" style="
+background:#222;
+padding:40px;
+text-align:center;
+">
+
+<h2 style="color:#ffd700;">
+Контакты
+</h2>
+
+<p>📞 Телефон: +992 501999160</p>
+
+<p>📧 Email: auto@gmail.com</p>
+
+<p>📍 Душанбе, Таджикистан</p>
+
+</section>
